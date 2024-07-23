@@ -12,3 +12,7 @@ console.log(nName.trim())
 const url="https://www.google%20name.com";
 console.log(url.replace("%20","-"))
 console.log(url.includes("google"))
+
+
+let str = "My-name-is*hayan"; 
+console.log(str.split("-"))
