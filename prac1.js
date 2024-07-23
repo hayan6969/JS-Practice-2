@@ -16,3 +16,4 @@ console.log(url.includes("google"))
 
 let str = "My-name-is*hayan"; 
 console.log(str.split("-"))
+console.log(str.concat(" I am a student"))
