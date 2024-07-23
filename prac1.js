@@ -4,6 +4,11 @@ let name="hayan";
 const age=25;
 
 let newName = name.slice(9,3)
-let nName='   hayan is here  '
+let nName='   hayan is  here  '
 console.log(nName)
 console.log(nName.trim())
+
+
+const url="https://www.google%20name.com";
+console.log(url.replace("%20","-"))
+console.log(url.includes("google"))
