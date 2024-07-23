@@ -17,3 +17,8 @@ console.log(url.includes("google"))
 let str = "My-name-is*hayan"; 
 console.log(str.split("-"))
 console.log(str.concat(" I am a student"))
+
+const num = 23.8966
+
+console.log(num.toFixed(2))
+console.log(num.toPrecision(3))
