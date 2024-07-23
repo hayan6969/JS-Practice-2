@@ -33,3 +33,11 @@ console.log(Math.PI.toFixed(2))
 console.log(Math.round(4.38))
 console.log(Math.ceil(4.38))
 console.log(Math.max(3,4,5,6))
+
+console.log(Math.random())  // values between 0 to 1 by default mostly decimal
+
+
+const min =10;
+const max = 20;
+
+console.log(Math.floor(Math.random() * (max-min+1)+min)) // values between 10 to 20
