@@ -61,3 +61,13 @@ let obj = {
 
 let arr7 = Array.from(Object.values(obj))
 console.log(arr7)
+
+
+//if you want to create an array from a set of elements use Array.of
+
+let a=100
+let b=200
+let c=300
+
+let arr8=Array.of(a,b,c)
+console.log(arr8)
