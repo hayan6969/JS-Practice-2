@@ -1,12 +1,6 @@
-const a = "Hello World";
-let b = 1
-var c = false
-let han
+//using + or , to concatenate strings is an old way, so use backticks instead
 
-
-
-account="admin"
-
-
-
-console.log(b)
+let name="hayan";
+const age=25;
+name = name.toUpperCase()
+console.log(name.charAt(2)); //true
