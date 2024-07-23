@@ -2,5 +2,6 @@
 
 let name="hayan";
 const age=25;
-name = name.toUpperCase()
-console.log(name.substring(1,2)); //true
+
+let newName = name.slice(9,3)
+console.log(newName);
