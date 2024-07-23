@@ -4,4 +4,6 @@ let name="hayan";
 const age=25;
 
 let newName = name.slice(9,3)
-console.log(newName);
+let nName='   hayan is here  '
+console.log(nName)
+console.log(nName.trim())
