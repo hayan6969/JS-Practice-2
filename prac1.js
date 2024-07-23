@@ -3,4 +3,4 @@
 let name="hayan";
 const age=25;
 name = name.toUpperCase()
-console.log(name.charAt(2)); //true
+console.log(name.substring(1,2)); //true
