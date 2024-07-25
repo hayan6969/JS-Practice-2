@@ -44,3 +44,14 @@ console.log('Arrow function')
 }
 
 n()
+
+
+const userr={
+    username:'John',
+    age:30,
+    greet(){
+        console.log(`Hello ${this.username}`)
+    }
+}
+
+userr.greet() //this will give error as username is not defined in the function
