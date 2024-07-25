@@ -71,3 +71,14 @@ let c=300
 
 let arr8=Array.of(a,b,c)
 console.log(arr8)
+
+for(let i=0;i<5;i++){
+    
+    if(i==3){
+        continue
+    }
+    console.log(i)
+}
+
+
+
