@@ -55,3 +55,29 @@ const userr={
 }
 
 userr.greet() //this will give error as username is not defined in the function
+
+const addTwo=(a,b)=>(a+b ) //implicit return, if wraped in curly braces then return is required and in parenthesis return is not required
+console.log(addTwo(2,3))
+
+
+
+//IIFE - Immediately Invoked Function Expression
+
+const sum1 = function(){
+    console.log('Sum')
+}(); //this will be called immediately
+
+(function sum3(){
+    console.log('Sum3')
+
+})(); //the semi-colon is required for IIFE
+const sum2 = (()=>{
+    console.log('Sum2')
+})() ;  //this will be called immediately by just wraping the function in parenthesis
+
+//calling the function directly by functionName() may cause global scope pollution so we use IIFE
+
+
+((name)=>{  //unNamed IIFE
+    console.log(name)
+})("hayan") //this is how we pass the arguments to IIFE
