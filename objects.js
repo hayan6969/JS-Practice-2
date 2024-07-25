@@ -38,5 +38,15 @@ const regularUser={
     }
 }
 
-console.log(regularUser.fullname.first)
+console.log(regularUser.fullname?.first) //the ?  will check if the property or value exists or not and if it does not exist it will return undefined
 
+const obj1 ={a:1,b:2}
+const obj2 ={c:2,d:1}
+
+
+const obj4 = Object.assign({},obj1,obj2) //it will merge the two objects and return a new object {} is for good practice, that becomes a empt object target and the others are source
+const obj3={...obj1,...obj2} //it will merge the two objects and return a new object
+
+console.log(obj3)
+console.log(obj4)
+ 
