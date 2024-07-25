@@ -10,6 +10,10 @@ const jsUser = {
 };
 
 console.log(jsUser);
-
+jsUser.greet = function () {
+  console.log(`Hello ${this.name}`);
+  return 1;
+};
+console.log(jsUser.greet())
 Object.freeze(jsUser); //it will freeze the object and you cannot modify it
 
