@@ -80,4 +80,4 @@ const sum2 = (()=>{
 
 ((name)=>{  //unNamed IIFE
     console.log(name)
-})("hayan") //this is how we pass the arguments to IIFE
+})("hayan"); //this is how we pass the arguments to IIFE
