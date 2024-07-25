@@ -14,6 +14,29 @@ jsUser.greet = function () {
   console.log(`Hello ${this.name}`);
   return 1;
 };
-console.log(jsUser.greet())
+// console.log(jsUser.greet())
 Object.freeze(jsUser); //it will freeze the object and you cannot modify it
+
+
+const user={}
+
+user.id="123"
+user.name="John"
+user.age=30
+user.isLoggedin=true
+
+const regularUser={
+    id:"123",
+    name:"John",
+    age:30,
+    isLoggedin:true,
+    fullname:{
+
+        first:"John",
+        last:"Doe"
+    
+    }
+}
+
+console.log(regularUser.fullname.first)
 
