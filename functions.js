@@ -21,3 +21,13 @@ function sum(...numbers){
 }
 console.log(sum(1,2,3,4,5,6,7,8,9,10))
 
+
+function two (){
+     return function three(){
+        return function four(){
+            return 'Four'
+        }
+    }
+}
+
+console.log(two()()()) //this is how we call the inner function
