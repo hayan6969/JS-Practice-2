@@ -49,4 +49,10 @@ const obj3={...obj1,...obj2} //it will merge the two objects and return a new ob
 
 console.log(obj3)
 console.log(obj4)
+
+//object destructuring
+
+const {a,b}=obj1  //you can put : infront of a and give it another name then use that name to call it
+console.log(a)
+console.log(b)
  
