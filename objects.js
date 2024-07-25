@@ -9,7 +9,7 @@ const jsUser = {
   isAdmin: true,
 };
 
-console.log(jsUser["name"]);
+console.log(jsUser);
 
 Object.freeze(jsUser); //it will freeze the object and you cannot modify it
 
