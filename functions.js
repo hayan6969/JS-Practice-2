@@ -31,3 +31,16 @@ function two (){
 }
 
 console.log(two()()()) //this is how we call the inner function
+
+
+const a = function (){  //function definition with expression and hoisting wont happen here so you cannot call this function before definition as its being stored in a variable
+    return 'a'
+}
+
+console.log(a())
+
+const n = ()=>{
+console.log('Arrow function')
+}
+
+n()
