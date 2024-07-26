@@ -106,4 +106,24 @@ let check = false
 
 check ==true ? console.log('True') : console.log('False') //ternary operator
 
+
+console.log([6,-2,2,-7].sort((a,b)=>a-b)) //sorting in ascending order
+
+//or a better approach would be
+
+const mySort=(a,b)=>{
+if(a>b){
+    return 1
+}
+else if (a<b){
+    return -1
+}
+
+else{
+    return 0
+}
+}
+
+console.log(["c",'g','a','b'].sort(mySort)) //sorting in ascending order
+
  
