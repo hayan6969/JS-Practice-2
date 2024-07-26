@@ -102,4 +102,8 @@ console.log('one1')
 
 three3()
 
+let check = false
+
+check ==true ? console.log('True') : console.log('False') //ternary operator
+
  
