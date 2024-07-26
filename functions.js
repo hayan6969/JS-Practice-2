@@ -127,3 +127,4 @@ else{
 console.log(["c",'g','a','b'].sort(mySort)) //sorting in ascending order
 
  
+console.log(["c",'g','a','b'].sort((a,b)=>a.localeCompare(b))) //sorting in ascending order
