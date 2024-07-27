@@ -126,3 +126,43 @@ const books =[
 
 
 console.log(books.filter((book)=>(book.published>2005 && book.genre=="Non-Fiction"))[0].title) //all the books published after 2005
+
+
+//Map
+
+const nextNum= myNums.map((num)=>(num+1)).filter((numb)=>numb%2===0) //it will return a new array with all the elements incremented by 1
+console.log(nextNum)
+
+
+//you can also chain the map and filter functions
+
+//Reduce
+
+const shoppingCart=[
+    {
+        product:'Milk',
+        price:20
+    },
+    {
+        product:'Bread',
+        price:10
+    },
+    {
+        product:'Butter',
+        price:30
+    },
+    {
+        product:'Cheese',
+        price:40
+    }
+]
+
+const Numss = [1,2,3,4,5,6,7,8,9,10]
+const test=Numss.reduce((acc,val)=>{
+    console.log(`Accumulator: ${acc}, Value: ${val}`)
+   return acc+val},0) //0 is the initial value of acc, if not provided then the first element of the array will be the initial value of acc
+
+   console.log(test)
+
+   const total=shoppingCart.reduce((acc,val)=>acc+val.price,0)
+   console.log(`Total: ${total}$`)
