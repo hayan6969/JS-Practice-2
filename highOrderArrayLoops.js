@@ -46,3 +46,11 @@
         })
 
 
+
+        //**************************************  MAP, FILTER, REDUCE *************************************//
+
+//You cannot return from forEach, you can only return from map, filter and reduce
+
+myNums = [1,2,3,4,5,6,7,8,9,10]
+let newNums=myNums.filter((val)=>(val<9)) //all the values satisfying the condition will be returned
+console.log(newNums)
