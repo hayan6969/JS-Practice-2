@@ -39,3 +39,10 @@
 
 
 
+        //for each
+
+        arr.forEach((num,index,array)=>{  //gives you access to index, individual element and the array itself
+            console.log(index,num,array)
+        })
+
+
