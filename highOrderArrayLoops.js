@@ -54,3 +54,72 @@
 myNums = [1,2,3,4,5,6,7,8,9,10]
 let newNums=myNums.filter((val)=>(val<9)) //all the values satisfying the condition will be returned
 console.log(newNums)
+
+
+//we are gonna have an array of objects having books information
+
+const books =[
+
+    {
+        title:'Book1',
+        genre:'Fiction',
+        published:2000
+    },
+    {
+
+        title:'Book2',
+        genre:'Non-Fiction',
+        published:2001
+    },
+    {
+
+        title:'Book3',
+        genre:'Fiction',
+        published:2002
+    },
+    {
+
+        title:'Book4',
+        genre:'Non-Fiction',
+        published:2003
+    },
+    {
+
+        title:'Book5',
+        genre:'Fiction',
+        published:2004
+    },
+    {
+
+        title:'Book6',
+        genre:'Non-Fiction',
+        published:2005
+    },
+    {
+
+        title:'Book7',
+        genre:'Fiction',
+        published:2006
+    },
+    {
+
+        title:'Book8',
+        genre:'Non-Fiction',
+        published:2007
+    },
+    {
+
+        title:'Book9',
+        genre:'Fiction',
+        published:2008
+    },
+    {
+
+        title:'Book10',
+        genre:'Non-Fiction',
+        published:2009
+    },
+    
+
+
+]
