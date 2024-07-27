@@ -125,4 +125,4 @@ const books =[
 ]
 
 
-console.log(books.filter((book)=>(book.published>2005))[0].title) //all the books published after 2005
+console.log(books.filter((book)=>(book.published>2005 && book.genre=="Non-Fiction"))[0].title) //all the books published after 2005
