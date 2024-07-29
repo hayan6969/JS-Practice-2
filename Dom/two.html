@@ -13,68 +13,80 @@
             padding: 20px;
         }
     </style>
-    <div class="parent">
-        <div class="day">Mon</div>
-        <div class="day">Tue</div>
-        <div class="day">Wef</div>
-        <div class="day">Thrs</div>
-    </div>
-
-    <ul class="language">
-        <li>Javascript</li>
-    </ul>
+   
+      <ul>
+        <li id="lii">Red</li>
+        <li id="lii">Green</li>
+        <li id="lii">Blue</li>
+      </ul>
+   
 
     <script>
         let parent = document.querySelector('.parent');
        console.log(parent)
-       console.log(parent.children)
+    //    console.log(parent.children)
 
-       for(let i=0; i<parent.children.length; i++){
-           console.log(parent.children[i].innerHTML)
-       }
-
-       const day = document.querySelector('.day');
-       console.log(day.nextElementSibling)
+  
 
        //adding elements
 
-       const element = document.createElement('div')
-       element.className = 'elem'
-         element.style.color = 'red'
+//        const element = document.createElement('div')
+//        element.className = 'elem'
+//          element.style.color = 'red'
 
-         //the div is created in memory but not attached
+//          //the div is created in memory but not attached
 
-         const text=document.createTextNode('added Hello World')
-element.appendChild(text)
+//          const text=document.createTextNode('added Hello World')
+// element.appendChild(text)
 
-document.body.appendChild(element)
+// document.body.appendChild(element)
 //now you can create a function to do all this
 
-function addLang(lang){
-    const element = document.createElement('li')
-    element.className = 'elem'
-    element.style.color = 'red'
-    const text=document.createTextNode(lang)
-    element.appendChild(text)
-    document.querySelector('.language').appendChild(element)
+// function addLang(lang){
+//     const element = document.createElement('li')
+//     element.className = 'elem'
+//     element.style.color = 'red'
+//     const text=document.createTextNode(lang)
+//     element.appendChild(text)
+//     document.querySelector('.language').appendChild(element)
 
-} //this method is an optimized approach as we use append child instead of innerHTML so it doesnt have to traverse the whole dom tree
+// } //this method is an optimized approach as we use append child instead of innerHTML so it doesnt have to traverse the whole dom tree
 
-addLang('Python')
-addLang('TypeScript')
+// addLang('Python')
+// addLang('TypeScript')
 
 //Edit
 
-const elem = document.querySelector('.elem')
-const newLi=document.createElement('li')
-newLi.textContent = 'New Language'
-elem.replaceWith(newLi)
+// const elem = document.querySelector('.elem')
+// const newLi=document.createElement('li')
+// newLi.textContent = 'New Language'
+// elem.replaceWith(newLi)
 
 
 //Remove
 
-const elem1 = document.querySelector('.elem')
-elem1.remove()
+
+
+
+//color changing
+
+const buttons=document.querySelectorAll('li')
+console.log(buttons)
+
+buttons.forEach((button)=>{
+    button.addEventListener('click',(e)=>{
+        document.body.style.backgroundColor = e.target.textContent.toLowerCase()
+    }
+    )
+})
+
+const clock = document.createElement('h1')
+document.body.appendChild(clock)
+setInterval(()=>{
+    const time=new Date()
+    clock.textContent = `${time.toLocaleTimeString()}`
+    
+},1000)
 
 
     </script>
