@@ -20,6 +20,10 @@
         <div class="day">Thrs</div>
     </div>
 
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
     <script>
         let parent = document.querySelector('.parent');
        console.log(parent)
@@ -45,6 +49,34 @@ element.appendChild(text)
 
 document.body.appendChild(element)
 //now you can create a function to do all this
+
+function addLang(lang){
+    const element = document.createElement('li')
+    element.className = 'elem'
+    element.style.color = 'red'
+    const text=document.createTextNode(lang)
+    element.appendChild(text)
+    document.querySelector('.language').appendChild(element)
+
+} //this method is an optimized approach as we use append child instead of innerHTML so it doesnt have to traverse the whole dom tree
+
+addLang('Python')
+addLang('TypeScript')
+
+//Edit
+
+const elem = document.querySelector('.elem')
+const newLi=document.createElement('li')
+newLi.textContent = 'New Language'
+elem.replaceWith(newLi)
+
+
+//Remove
+
+const elem1 = document.querySelector('.elem')
+elem1.remove()
+
+
     </script>
 </body>
 </html>
