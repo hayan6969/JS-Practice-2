@@ -24,3 +24,7 @@ String.prototype.trueLength = function(){  // Adding a new method to the String 
 const str = "  Hello  ";
 
 console.log(str.trueLength()); // Output: 5
+
+console.log("hi".trueLength()) // Output: 2
+
+
