@@ -35,7 +35,7 @@ class Admin extends User{
         this.email = email;
         console.log(this)
     }
-
+ 
 }
 
 
