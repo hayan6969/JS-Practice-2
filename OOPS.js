@@ -20,6 +20,7 @@ String.prototype.trueLength = function(){  // Adding a new method to the String 
 }
 
 
-const str = new String("  Hello  ");
+// const str = new String("  Hello  ");
+const str = "  Hello  ";
 
 console.log(str.trueLength()); // Output: 5
