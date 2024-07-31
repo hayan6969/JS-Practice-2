@@ -5,3 +5,11 @@ const user ={
 }
 
 console.log(user.username); // Output: batman
+
+
+const func = ( username)=>{
+this.username = username;
+return this
+}
+
+console.log(func("hayan"))
