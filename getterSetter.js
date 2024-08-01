@@ -24,11 +24,14 @@ const func = ()=>{
 
     const func2=()=>{
         const func3=()=>{
-            console.log(a)
+            
+            console.log(a) //it can access the parent a or you can also create a new variable a that will be valid in its own scope and will not override the parent a
         }
         func3()
     }
     func2()
+    console.log(a)
+   
 }
 
 func()
